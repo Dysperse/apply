@@ -1,65 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply now &bull; Dysperse</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Work @ Dysperse</title>
+    <meta name="title" content="Work @ Dysperse" />
+    <meta
+      name="description"
+      content="Are you an individual with a passion for innovation and a drive to make a positive impact on your community? If so, we want YOU to be a part of our exciting volunteer team!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Work @ Dysperse" />
+    <meta
+      property="og:description"
+      content="Are you an individual with a passion for innovation and a drive to make a positive impact on your community? If so, we want YOU to be a part of our exciting volunteer team!"
+    />
+    <meta property="og:image" content="https://dysperse.com/meta.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Work @ Dysperse" />
+    <meta
+      property="twitter:description"
+      content="Are you an individual with a passion for innovation and a drive to make a positive impact on your community? If so, we want YOU to be a part of our exciting volunteer team!"
+    />
+    <meta property="twitter:image" content="https://dysperse.com/meta.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <style>
-        /* Styles for the progress loader */
-        #loader-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(255, 255, 255, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
+      /* Styles for the progress loader */
+      #loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
 
-        #loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #000;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-        }
+      #loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #000;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+      }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
         }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 
-        /* Styles for the iframe */
-        #iframe-container {
-            display: none; /* Hide the iframe initially */
-        }
+      /* Styles for the iframe */
+      #iframe-container {
+        display: none; /* Hide the iframe initially */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Circular progress loader -->
     <div id="loader-container">
-        <div id="loader"></div>
+      <div id="loader"></div>
     </div>
 
     <!-- The iframe that wraps the website -->
     <div id="iframe-container">
-        <iframe id="myIframe" src="https://airtable.com/embed/appx1hvDj0CJyWUG5/shrgs6ir5luJzqGLs" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: 0;"></iframe>
+      <iframe
+        id="myIframe"
+        src="https://airtable.com/embed/appx1hvDj0CJyWUG5/shrgs6ir5luJzqGLs"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          border: 0;
+        "
+      ></iframe>
     </div>
 
     <script>
-        // JavaScript to hide the loader and show the iframe once it's loaded
-        const iframe = document.getElementById('myIframe');
-        const loaderContainer = document.getElementById('loader-container');
-        const iframeContainer = document.getElementById('iframe-container');
+      // JavaScript to hide the loader and show the iframe once it's loaded
+      const iframe = document.getElementById("myIframe");
+      const loaderContainer = document.getElementById("loader-container");
+      const iframeContainer = document.getElementById("iframe-container");
 
-        iframe.addEventListener('load', () => {
-            loaderContainer.style.display = 'none'; // Hide the loader
-            iframeContainer.style.display = 'block'; // Show the iframe
-        });
+      iframe.addEventListener("load", () => {
+        loaderContainer.style.display = "none"; // Hide the loader
+        iframeContainer.style.display = "block"; // Show the iframe
+      });
     </script>
-</body>
+  </body>
 </html>
